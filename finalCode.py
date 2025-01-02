@@ -3,12 +3,10 @@ import numpy as np  # Module that simplifies computations on matrices
 import matplotlib.pyplot as plt  # Module used for plotting
 from pylsl import StreamInlet, resolve_byprop  # Module to receive EEG data
 import utils  # Our own utility functions
-#from sklearn.externals import joblib
 from scipy.signal import welch
 from sklearn.preprocessing import scale
 from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 import time
-#import classify
 import os
 import pywt
 from scipy.signal import coherence
@@ -241,5 +239,3 @@ if prediction_live == '[1]':
     print("Patient has Alzheimers? True")
 else:
     print("Patient has Alzheimers? False")
-
-#print("Patient Has Alzheimers?", prediction_live)
